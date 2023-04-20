@@ -1,0 +1,61 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.container{
+	background-image: url("../img/pik.png");
+	/* height: 100vh; */
+	height: 60vh;
+	animation-name: pik-Anni;
+	animation-duration: 10s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+.container-sm{
+	background-image: url("../img/tree.png");
+	height: 40vh;
+	margin-top: -35vh;
+	animation-name: pik-Anni;
+	animation-duration: 10s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+.container-md{
+	position: absolute;
+	top: 53vh;
+	width: 100%;
+}
+
+.road{
+	/* margin-top: 20px; */
+	height: 20vh;
+	background-image: url("../img/road.png");
+	box-shadow: 2px 2px 2px 2px black;
+}
+.car-box{
+	animation-name: car-Anni;
+	animation-duration: 10s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+@keyframes car-Anni{
+	0%{
+		margin-left: 0;
+	}
+	100%{
+		margin-left: calc(100% - 200px);
+	}
+}
+
+@keyframes pik-Anni{
+	0%{
+		background-position: 0 0;
+	}
+	100%{
+		background-position: -100% 0;
+	}
+}
